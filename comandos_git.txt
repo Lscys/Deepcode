@@ -54,6 +54,7 @@ para ejecutarlo es git stats
 Variables de entorno
 alias estado="git status"
 alias agregar="git add ."
-git log
 alias viaje="git commit -m"
-alias subir="git push -u origin main"
+git log
+alias subir="git push origin main"
+alias actualizar="git pull origin main"
