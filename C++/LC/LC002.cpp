@@ -1,12 +1,14 @@
 #include<iostream>
 #include<conio.h>
+#include<string.h>
 using namespace std;
-char Apenom[50];
+char Apenom[50];//C
+string nombre;//C++ 20
 int Horas;
 float Precio, Sueldo, Dscto, Neto;
 int main(){
 	cout<<"Apellidos y Nombre: ";
-	cin>>Apenom;
+	cin>>nombre>>Apenom;
 	cout<<"Numero de horas laboradas: ";
 	cin>>Horas;
 	cout<<"Precio por horas laboradas: ";
