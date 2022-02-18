@@ -3,7 +3,6 @@
 using namespace std;
 string Planeta[9]{"Mercurio", "Venus", "Tierra", "Marte", "Jupiter", "Saturno", "Urano", "Neptuno", "Pluton"};
 string Mar;
-
 int Num;
 int main (){
     cout<<"Ingrese en numero del planeta: ";
