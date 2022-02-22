@@ -1,0 +1,17 @@
+==============================================
+Factura / boleta
+==============================================
+Placa madre:______________________________370
+Procesador CPU:___________________________444
+Memoria RAM:______________________________129
+Disco Duro:_______________________________240
+Tarjeta de video:_________________________425
+Case:_____________________________________129
+Monitor:__________________________________444
+Otros: 55+55+59
+El precio en soles sin IGV es: 2350
+
+ En caso de ir a comprar a tienda, se espera el deposito 
+ de S/.168.66 a cuenta 191-27621568-0-72 ahorro 
+ soles BCP o 292-3056979545 ahorro soles INTERBANK y mandar sms de 
+ confirmacion 987412813

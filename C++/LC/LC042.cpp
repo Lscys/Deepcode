@@ -4,30 +4,29 @@
 using namespace std;
 char cod;
 string cur, rp;
-float pf, nota;
+float pf, nota[4];
 int n;
-void entrada(){
+int main(){
+    cout<<"Ingresar Codigos: ";
+    cin>>rp;
+    
     while((rp=="s")||(rp=="S")){
-        for(n=0; n<=3; n++){  
+        
+        for(n=0; n<4; n++){  
         cout<<"Ingresar Nota: ";
         cin>>nota[n];
         pf+=nota[n];
         }
-        for(n=0; n<=3; n++){
-            cout<<"Las notas son: "<<nota[n];
-        }
-        pf=pf/4;
+
+        /*for(n=0; n<4; n++){
+            cout<<"Las notas son: "<<nota[n]<<"\n";
+        }*/
+
+        pf/=4;
         cout<<"El promedio es: "<<pf<<"\n";
         cout<<"--------------------------- \n";
-        cout<<"Deseas continuar [s|n]: \n";
+        cout<<"Deseas continuar [s|n]: ";
         cin>>rp;
     }
-}
-int main(){
-    cout<<"Ingresar Codigos: \n";
-    cin>>cod;
-    cout<<"Ingresar Curso: \n";
-    cin>>cur;
-    entrada();
     return 0;
 }
