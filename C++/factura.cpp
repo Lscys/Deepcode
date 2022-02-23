@@ -1,71 +1,74 @@
+//Programacion Estructurada
+//Programacion Orientado a Objetos
+//Programacion Modular
 #include<iostream>
 #include<conio.h>
 #include<cstdlib>
 #include<string.h>
 #include<fstream>
 using namespace std;
+
+string menbrete = "\n En caso de ir a comprar a tienda, se espera el deposito \n de S/.168.66 a cuenta 191-27621568-0-72 ahorro \n soles BCP o 292-3056979545 ahorro soles INTERBANK y mandar sms de \n confirmacion 987412813\n By: Lscys";
+
 int main(){
-    float pag, IGV, precio_pagar;
-    int Pm, CPU, RAM, DD, TV, Case, Monitor, UO, TM, Estabilizador, precio_final, otros_final; 
-    system("cls");
-    cout<<"tipo de cambio de pagina: ";
-    cin>>pag;
-    cout<<"Placa madre: ";
+    float Tcambio, IGV, precio_pagar, porcentaje=0.18;
+    int Pm, CPU, RAM, DD, TV, Case, Monitor, UO, TM, Estabilizador, Subtotal, otros_final; 
+    system("cls");//Limpiar pantalla
+    //Ingresantes
+    cout<<"tipo de cambio: \tS/.";
+    cin>>Tcambio; //3.7
+    cout<<"\nPlaca madre: \t\t$";
     cin>>Pm;
-    cout<<"Procesador 'CPU': ";
+    cout<<"Procesador 'CPU': \t$";
     cin>>CPU;
-    cout<<"Memoria 'RAM': ";
+    cout<<"Memoria 'RAM': \t\t$";
     cin>>RAM;
-    cout<<"Disco Duro: ";
+    cout<<"Disco Duro: \t\t$";
     cin>>DD;
-    cout<<"Tarjeta de video: ";
+    cout<<"Tarjeta de video: \t$";
     cin>>TV;
-    cout<<"Case: ";
+    cout<<"Case: \t\t\t$";
     cin>>Case;
-    cout<<"Monitor: ";
+    cout<<"Monitor: \t\t$";
     cin>>Monitor;
     cout<<"Otros \n";
-    cout<<"-Unidad Optica: ";
+    cout<<"-Unidad Optica: \t$";
     cin>>UO;
-    cout<<"-Teclado / Mouse: ";
+    cout<<"-Teclado / Mouse: \t$";
     cin>>TM;
-    cout<<"-Estabilizador: ";
+    cout<<"-Estabilizador: \t$";
     cin>>Estabilizador;
-    Pm*=3.7;
-    CPU*=3.7;
-    RAM*=3.7;
-    DD*=3.7;
-    TV*=3.7;
-    Case*=3.7;
-    Monitor*=3.7;
-    UO*=3.7;
-    TM*=3.7;
+
+    //Calculos
     otros_final=UO+TM+Estabilizador;
-    IGV=0.18;
-    Estabilizador*=pag;
-    precio_final=(Pm+CPU+RAM+DD+TV+Case+Monitor+UO+TM+Estabilizador);
-    precio_pagar=precio_final+IGV;
-    cout<<"El precio en soles sin IGV es: "<<precio_final<<endl;
+    Subtotal=(Pm+CPU+RAM+DD+TV+Case+Monitor+UO+TM+Estabilizador);
+    precio_pagar = Subtotal*IGV;
+    IGV=Subtotal*porcentaje;
+    precio_pagar=Subtotal+IGV;
+    //Saliente Final
+    cout<<"El precio sin IGV es: \t$"<<Subtotal<<"(S/."<<Subtotal*Tcambio<<")"<<"\n"<<endl;
+    cout<<"Presione una tecla para mostrar su factura --> ";
+    getch();
     ofstream archivo;
     archivo.open("factura.txt");
     archivo<<"=============================================="<<endl;
     archivo<<"              Factura / boleta"<<endl;
     archivo<<"=============================================="<<endl;
-    archivo<<"Placa madre:______________________________S/."<<Pm<<endl;
-    archivo<<"Procesador CPU:___________________________S/."<<CPU<<endl;
-    archivo<<"Memoria RAM:______________________________S/."<<RAM<<endl;
-    archivo<<"Disco Duro:_______________________________S/."<<DD<<endl;
-    archivo<<"Tarjeta de video:_________________________S/."<<TV<<endl;
-    archivo<<"Case:_____________________________________S/."<<Case<<endl;
-    archivo<<"Monitor:__________________________________S/."<<Monitor<<endl;
-    archivo<<"Otros:____________________________________S/."<<otros_final<<endl;
+    archivo<<"Placa madre:______________________________"<<"$"<<Pm<<" (S/."<<Pm*Tcambio<<")"<<endl;
+    archivo<<"Procesador CPU:___________________________"<<"$"<<CPU<<"(S/."<<CPU*Tcambio<<")"<<endl;
+    archivo<<"Memoria RAM:______________________________"<<"$"<<RAM<<"(S/."<<RAM*Tcambio<<")"<<endl;
+    archivo<<"Disco Duro:_______________________________"<<"$"<<DD<<"(S/."<<DD*Tcambio<<")"<<endl;
+    archivo<<"Tarjeta de video:_________________________"<<"$"<<TV<<"(S/."<<TV*Tcambio<<")"<<endl;
+    archivo<<"Case:_____________________________________"<<"$"<<Case<<"(S/."<<Case*Tcambio<<")"<<endl;
+    archivo<<"Monitor:__________________________________"<<"$"<<Monitor<<"(S/."<<Monitor*Tcambio<<")"<<endl;
+    archivo<<"Otros:____________________________________"<<"$"<<otros_final<<"(S/."<<otros_final*Tcambio<<")"<<endl;
     archivo<<endl;
-    archivo<<"El precio en soles sin IGV es:___________S/."<<precio_final<<endl;
-    archivo<<"IGV:_____________________________________S/."<<IGV<<endl;
-    archivo<<"Total a pagar:___________________________S/."<<precio_pagar<<endl;
-    archivo<<"\n En caso de ir a comprar a tienda, se espera el deposito \n de S/.168.66 a cuenta 191-27621568-0-72 ahorro \n soles BCP o 292-3056979545 ahorro soles INTERBANK y mandar sms de \n confirmacion 987412813"<<endl;
+    archivo<<"El precio en soles sin IGV es:___________"<<"$"<<Subtotal<<"(S/."<<Subtotal*Tcambio<<")"<<endl;
+    archivo<<"IGV:_____________________________________"<<"$"<<IGV<<"(S/."<<IGV*Tcambio<<")"<<endl;
+    archivo<<"Total a pagar:___________________________"<<"$"<<precio_pagar<<"(S/."<<precio_pagar*Tcambio<<")"<<endl;
+    archivo<<menbrete;
     archivo.close();
     system("Start factura.txt");
-    getch();
+    
     return 0;
 }
