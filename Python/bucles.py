@@ -1,5 +1,5 @@
 def run():
-    LIMITE = 10000
+    LIMITE = 1000
 
     contador = 0
     potencia_2 = 2**contador
@@ -9,4 +9,4 @@ def run():
         potencia_2 = 2**contador
 
 if __name__ == '__main__':
-        run()
+    run()
