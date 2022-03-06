@@ -23,7 +23,7 @@ if opcion == "A":
 
 if opcion == "B":
     hay_dinero = input("Tienes dinero? [S/N] : ")
-    if opcion == "SS":
+    if hay_dinero == "S":
         print("Felicidades te comprastes un Androit")
         exit()
     else:
