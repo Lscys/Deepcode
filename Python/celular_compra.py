@@ -13,20 +13,19 @@ opcion = input("Que clase de celular deseas comprar\n"
 # else:
     # print("No tienes dinero")
 
-if opcion == "A" or "a":
+if opcion == "A":
     hay_dinero = input("Tienes dinero? [S/N]: ")
-    if hay_dinero == "S" or "s":
+    if hay_dinero == "S":
         print("Felicidades, te comprastes un IOS")
         exit()
     else:
         print("No tienes dinero")
 
-if opcion == "B" or "b":
+if opcion == "B":
     hay_dinero = input("Tienes dinero? [S/N] : ")
-    if opcion == "N" or "n":
-        print("No tiene dinero")
-    else:
+    if opcion == "SS":
         print("Felicidades te comprastes un Androit")
         exit()
-
+    else:
+        print("No tiene dinero")
 
