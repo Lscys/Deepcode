@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="cuerpo">
+    
+    <div>
+		<h1 id="demo">Jefferson</h1>
+		<h3 id="selecionado">seleccionado</h3>
+		<h2 id="text_area1">Area</h2>
+		<input type="text" id="demo1">
+		<button onclick="texto()">Cliquea me</button>
+		</div>
+    <br>
+    <div>
+        <label for="cars">Elija su Carro: </label>
+        <select name="cars" id="cars">
+        <option value="Volvo">Volavo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        </select>
+        <button onclick="car()">Aceptar</button>
+    </div>
+    <div>
+        <textarea id="text_area" cols="35" rows="10"></textarea>
+        <button onclick="text_area()">Enviar</button>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

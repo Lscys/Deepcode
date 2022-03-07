@@ -1,0 +1,16 @@
+#cuerpo{
+    text-align: center;
+}
+#demo{
+    color: rgb(84, 251, 98);
+    font-size: 40px;
+    font-family: Helvetica;
+}
+#selecionado{
+    color: rgb(243, 155, 12);
+    font-size: 25px;
+}
+#text_area1{
+    color: blue;
+    font-size: 25px;
+}
