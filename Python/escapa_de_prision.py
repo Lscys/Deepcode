@@ -1,5 +1,4 @@
 import random
-from re import A
 
 menu = """
 Han logrado escapar de la carcel, tu amigo y tu
