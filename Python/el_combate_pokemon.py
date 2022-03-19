@@ -1,7 +1,12 @@
 from random import randint
 
-vida_pikachu = 100
-vida_squirtle = 100
+VIDA_INICAL_PIKACHU = 100
+VIDA_INICAL_SQUIRTLE = 90
+
+TAMAÑO_BARRA_VIDA = 20
+
+vida_pikachu = VIDA_INICAL_PIKACHU
+vida_squirtle = VIDA_INICAL_PIKACHU
 
 while vida_pikachu > 0 and vida_squirtle > 0 :
     # se desenvuelven los turnos de combate
@@ -17,7 +22,12 @@ while vida_pikachu > 0 and vida_squirtle > 0 :
         print("Pikachu ataca con Onda Trueno")
         vida_squirtle -= 11
 
-    print("La vida de Pikachu es: {}, la vida de Squirtle es: {}".format(vida_pikachu, vida_squirtle))
+    barras_de_vida_pikachu = int(vida_pikachu * TAMAÑO_BARRA_VIDA / VIDA_INICAL_PIKACHU)
+    print("Pikachu:     [{}{}] ({}/{})".format("*" * barras_de_vida_pikachu, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_pikachu), vida_pikachu, VIDA_INICAL_PIKACHU))
+
+    barras_de_vida_squirtle = int(vida_squirtle * TAMAÑO_BARRA_VIDA / VIDA_INICAL_SQUIRTLE)
+    print("Squirtle:     [{}{}] ({}/{})".format("*" * barras_de_vida_squirtle, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_squirtle), vida_squirtle, VIDA_INICAL_SQUIRTLE))
+    
 
     input("Enter para poder continuar...\n\n")
 
@@ -31,6 +41,7 @@ while vida_pikachu > 0 and vida_squirtle > 0 :
     if ataque_squirtle == "P":
         print("Squirtle atace con Placaje")
         vida_pikachu -= 20
+        0
     elif ataque_squirtle == "A":
         print("Squirtle ataca con Pistola de agua")
         vida_pikachu -= 18
@@ -38,7 +49,12 @@ while vida_pikachu > 0 and vida_squirtle > 0 :
         print("Squirtle ataca con Burbuja")
         vida_pikachu -= 15
 
-    print("La vida de Pikachu es: {}, la vida de Squirtle es: {}".format(vida_pikachu, vida_squirtle))
+    barras_de_vida_pikachu = int(vida_pikachu * TAMAÑO_BARRA_VIDA / VIDA_INICAL_PIKACHU)
+    print("Pikachu:     [{}{}] ({}/{})".format("*" * barras_de_vida_pikachu, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_pikachu), vida_pikachu, VIDA_INICAL_PIKACHU))
+
+    barras_de_vida_squirtle = int(vida_squirtle * TAMAÑO_BARRA_VIDA / VIDA_INICAL_SQUIRTLE)
+    print("Squirtle:     [{}{}] ({}/{})".format("*" * barras_de_vida_squirtle, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_squirtle), vida_squirtle, VIDA_INICAL_SQUIRTLE))
+    
     input("Enter para poder continuar...\n\n")
 
 if vida_pikachu > vida_squirtle:
