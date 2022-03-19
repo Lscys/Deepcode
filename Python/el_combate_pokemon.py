@@ -1,4 +1,5 @@
 from random import randint
+import os
 
 VIDA_INICAL_PIKACHU = 100
 VIDA_INICAL_SQUIRTLE = 90
@@ -22,14 +23,21 @@ while vida_pikachu > 0 and vida_squirtle > 0 :
         print("Pikachu ataca con Onda Trueno")
         vida_squirtle -= 11
 
+    if vida_squirtle < 0:
+        vida_squirtle = 0
+    
+    if vida_pikachu < 0:
+        vida_pikachu = 0
+
     barras_de_vida_pikachu = int(vida_pikachu * TAMAÑO_BARRA_VIDA / VIDA_INICAL_PIKACHU)
     print("Pikachu:     [{}{}] ({}/{})".format("*" * barras_de_vida_pikachu, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_pikachu), vida_pikachu, VIDA_INICAL_PIKACHU))
 
     barras_de_vida_squirtle = int(vida_squirtle * TAMAÑO_BARRA_VIDA / VIDA_INICAL_SQUIRTLE)
     print("Squirtle:     [{}{}] ({}/{})".format("*" * barras_de_vida_squirtle, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_squirtle), vida_squirtle, VIDA_INICAL_SQUIRTLE))
     
-
+    
     input("Enter para poder continuar...\n\n")
+    os.system ("clear") 
 
     # Turno de Squirtle 
     print("Turno de Squirtle")
@@ -48,6 +56,12 @@ while vida_pikachu > 0 and vida_squirtle > 0 :
     elif ataque_squirtle == "B":
         print("Squirtle ataca con Burbuja")
         vida_pikachu -= 15
+    
+    if vida_squirtle < 0:
+        vida_squirtle = 0
+    
+    if vida_pikachu < 0:
+        vida_pikachu = 0
 
     barras_de_vida_pikachu = int(vida_pikachu * TAMAÑO_BARRA_VIDA / VIDA_INICAL_PIKACHU)
     print("Pikachu:     [{}{}] ({}/{})".format("*" * barras_de_vida_pikachu, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_pikachu), vida_pikachu, VIDA_INICAL_PIKACHU))
@@ -56,6 +70,7 @@ while vida_pikachu > 0 and vida_squirtle > 0 :
     print("Squirtle:     [{}{}] ({}/{})".format("*" * barras_de_vida_squirtle, " " * (TAMAÑO_BARRA_VIDA - barras_de_vida_squirtle), vida_squirtle, VIDA_INICAL_SQUIRTLE))
     
     input("Enter para poder continuar...\n\n")
+    os.system ("clear") 
 
 if vida_pikachu > vida_squirtle:
     print("Gano Pikachu")
