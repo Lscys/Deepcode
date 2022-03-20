@@ -9,7 +9,7 @@ MAP_HEIGTH = 15
 my_position = [6, 3]
 
 while True:
-    print("+" + "-" * MAPs_WIDTH * 3 + "+")
+    print("+" + "-" * MAP_WIDTH * 3 + "+")
 
     for coordinate_y in range(MAP_HEIGTH):
         print("|", end="")
@@ -29,12 +29,16 @@ while True:
 
     if direction == "w":
         my_position[POS_Y] -= 1
+        my_position[POS_Y] %= MAP_HEIGTH
     elif direction == "s":
         my_position[POS_Y] += 1
+        my_position[POS_Y] %= MAP_HEIGTH
     elif direction == "a":
         my_position[POS_X] -= 1
+        my_position[POS_X] %= MAP_WIDTH
     elif direction == "d":
         my_position[POS_X] += 1
+        my_position[POS_X] %= MAP_WIDTH
 
     os.system("cls")
 
