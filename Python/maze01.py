@@ -4,26 +4,10 @@ import os
 
 POS_X = 0
 POS_Y = 1
-
+MAP_WIDTH = 20
+MAP_HEIGTH = 15
 NUM_OF_MAP_OBJECTS = 11
 
-obstacle_definition = """\
-##########################
-					   ####
-####################   ####
-####################   ####
-###########
-###################  ######
-###############         ##
-#######            ########
-##############
-######################   ###
-#####     ########         #
-########                 ###
-######## #########
-#####    ###########    ####
-############################\
-"""
 
 my_position = [6, 3]
 tail_length = 0 
@@ -33,11 +17,6 @@ map_objects = []
 end_game = False
 died = False
 
-# Create obstacle map
-obstacle_definition = [list(row) for row in obstacle_definition.split("\n")]
-
-MAP_WIDTH = len(obstacle_definition[0])
-MAP_HEIGTH = len(obstacle_definition)
 
 # Main Loop
 while not end_game:
@@ -83,8 +62,6 @@ while not end_game:
                     end_game = True
                     died = True
             
-            if obstacle_definition[coordinate_y][coordinate_x] == "#":
-                char_to_draw = "#"
 
             print(" {} ".format(char_to_draw), end="")
         print("|")
