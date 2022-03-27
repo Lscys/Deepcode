@@ -41,13 +41,10 @@
         }
         .order {
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: auto 1fr auto;
             gap: 16px;
             align-items: center;
-            background-color: var(--very-light-pink);
-            margin-bottom: 24px;
-            border-radius: 8px;
-            padding: 0 24px;
+            margin-bottom: 12px;
         }
         .order p:nth-child(1) {
             display: flex;
@@ -65,43 +62,59 @@
             text-align: end;
             font-weight: bold;
         }
-        .shopping-cart {
-           display: grid;
-           grid-template-columns: auto 1fr auto auto;
-           gap: 16px;
-           margin-bottom: 24px;
-           align-items: center;
-        }
-        .shopping-cart figure {
-           margin: 0;
-        }
-        .shopping-cart figure img {
-            width: 70px;
-            height: 70px;
-            border-radius: 20px;
+        .order img {
+            width: 30px;
+            height: 30px;
             object-fit: cover;
-        }
-        .shopping-cart p:nth-child(2) {
-            color: var(--very-light-pink);
-        }
-        .shopping-cart p:nth-child(3) {
-            font-size: var(--md);
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="my-order">
         <div class="my-order-container">
-            <h1 class="title">My order</h1>
+            <h1 class="title">My orders</h1>
 
             <div class="my-order.content">
                 <div class="order">
                     <p>
-                        <span>04.25.21</span>
+                        <span>03.25.21</span>
                         <span>6 articles</span>
                     </p>
                     <p>$560.00</p>
+                    <img src="https://us.123rf.com/450wm/blankstock/blankstock1802/blankstock180200824/95892598-flecha-hacia-adelante-simple-icono-.jpg?ver=6" alt="">
+                </div>
+            </div>
+
+            <div class="my-order.content">
+                <div class="order">
+                    <p>
+                        <span>03.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="https://us.123rf.com/450wm/blankstock/blankstock1802/blankstock180200824/95892598-flecha-hacia-adelante-simple-icono-.jpg?ver=6" alt="">
+                </div>
+            </div>
+
+            <div class="my-order.content">
+                <div class="order">
+                    <p>
+                        <span>03.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="https://us.123rf.com/450wm/blankstock/blankstock1802/blankstock180200824/95892598-flecha-hacia-adelante-simple-icono-.jpg?ver=6" alt="">
+                </div>
+            </div>
+
+            <div class="my-order.content">
+                <div class="order">
+                    <p>
+                        <span>03.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="https://us.123rf.com/450wm/blankstock/blankstock1802/blankstock180200824/95892598-flecha-hacia-adelante-simple-icono-.jpg?ver=6" alt="">
                 </div>
             </div>
         </div>
