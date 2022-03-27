@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --white :#FFFFFF;
+            --black:#000000;
+            --very-light-pink:#C7C7C7;
+            --text-input-field:#F7F7F7;
+            --hospital-green:#ACD9B2;
+            --sm: 14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body {
+            margin: 0;
+            font-family: Century, sans-serif ;
+        }
+        .product-detail {
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+        }
+        .product-detail > img:nth-child(1){  
+            width: 40px;
+            height: 40px; 
+            position: absolute;
+            top: 24px;
+            left: 12px;
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+        }
+        .product-detail > img:nth-child(1):hover{   
+            cursor: pointer;
+        }
+        .product-detail > img:nth-child(2){
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 20px 20px 20px 20px;
+        }
+        .product-info {
+            margin: 24px 24px 0 24px;
+        }
+        .product-info p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px; 
+        }
+        .product-info p:nth-child(2) {
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 36px; 
+        }
+        .product-info p:nth-child(3) {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 36px; 
+        }
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer; 
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+        .primary-button img {
+            width: 40px;
+            height: 40px;
+        }
+        .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <img src="data:image/png;base64,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" alt="cierre">
+        <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="computer">
+        <div class="product-info">
+            <p>$3000,00</p>
+            <p>Computer</p>
+            <p>With its functional and practical position,
+            this bike also fulfills a 
+            decorative function, add your 
+            hall or workspace.</p>
+            <button class="primary-button add-to-cart-button">
+                <img src="https://w7.pngwing.com/pngs/225/984/png-transparent-computer-icons-shopping-cart-encapsulated-postscript-shopping-cart-angle-black-shopping-thumbnail.png" alt="add to cart">
+                Add to cart
+            </button>
+        </div>
+    </aside>
+</body>
+</html>
