@@ -47,6 +47,14 @@
             color: var(--sm);
             color: var(--hospital-green) !important;
         }
+        .container-end {
+            display: inline-flex;
+        }
+        @media (max-width: 640px) {
+            .mobile-menu {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -84,7 +92,7 @@
             </li>
         </ul>
 
-        <ul>
+        <ul class="container-end">
             <li>
                 <a href="/" class="email">Platzi@example.com</a>
             </li>
