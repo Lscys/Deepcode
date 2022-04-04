@@ -1,7 +1,104 @@
-============================================================
-=                   Examen de Programacion                 =
-============================================================
+========================================================================
+=                          Examen de Programacion                      =
+========================================================================
 
-La respuesta 1 es: a Aprobado		|| El correcto es: a
-La respuesta 2 es: b Desaprobado	|| El correcto es: a
-La respuesta 3 es: c Desaprobado	|| El correcto es: b
+1.Que significa la palabra *TOUCH*: 
+A) Tocar B) Abrir C) Encender D) Bajar
+
+La respuesta 1 es:	a Aprobado	|| El correcto es: a
+
+2.Que significa la palabra *MKDIR*: 
+A) Hacer carpeta B) Entrar a carpeta C) Hacer numeros D) Mostrar codigo
+
+La respuesta 2 es:	a Aprobado	|| El correcto es: a
+
+3.Que significa la palabra *PUSH*: 
+A) Fuerza B) Empujar C) Aturdir D) Dar animo
+
+La respuesta 3 es:	a Desaprobado	|| El correcto es: b
+
+4.Que significa la palabra *PULL*: 
+A).Ver B).Dar C).Atender D).Jalar
+
+La respuesta 4 es:	a Desaprobado	|| El correcto es: d
+
+5.Que significa la palabra *STAT* 
+A).Numeros B).Letras C).Estadistica D).Multiplicacion
+
+La respuesta 5 es:	a Desaprobado	|| El correcto es: c
+
+6.Que significa la palabra *ADD*
+A).Adentrar B).Despojar C).Pedir D).Agregar
+
+La respuesta 6 es:	a Desaprobado	|| El correcto es: d
+
+7.Que significa la palabra *ALL*
+A).Ustedes B).Todos C).Ellos D).Aquellos
+
+La respuesta 7 es:	a Desaprobado	|| El correcto es: b
+
+8.Que significa la palabra *MAIN*
+A).Principal B).Secundario C).Octavo D).Decimo
+
+La respuesta 8 es:	a Aprobado	|| El correcto es: a
+
+9.Que significa la palabra *CLONE*
+A).Entender B).Fabricar C).Espejo D).Clon
+
+La respuesta 9 es:	a Desaprobado	|| El correcto es: d
+
+10.Que significa la palabra *DIFF*
+A).Diferencia B).Otros C).Iguales D).Diccionario
+
+La respuesta 10 es:	a Aprobado	|| El correcto es: a
+
+11.Que significa la palabra *CONFIG*
+A).Fabricacion B).Configuracion C).Destrucion D).Imaginacion
+
+La respuesta 11 es:	a Desaprobado	|| El correcto es: b
+
+12.Que significa la palabra *RESET*
+A).Suspendido B).Apagar C).Prender D).Reiniciar
+
+La respuesta 12 es:	a Desaprobado	|| El correcto es: d
+
+13.Que significa la palabra *STASH*
+A).Reserva B).Acumular C).Decender D).Status
+
+La respuesta 13 es:	a Aprobado	|| El correcto es: a
+
+14.Que significa la palabra *SHORTLOG*
+A).Asta B).Emblema C).Bitacora D).Diccionario
+
+La respuesta 14 es:	a Desaprobado	|| El correcto es: c
+
+15.Que significa la palabra *HELP*
+A).Ayuda B).Servicios C).Ven D).Acercate
+
+La respuesta 15 es:	a Aprobado	|| El correcto es: a
+
+16.Que significa la palabra *LIST*
+A).Lector B).Abreviado C).Lista D).Orden
+
+La respuesta 16 es:	a Desaprobado	|| El correcto es: c
+
+17.Que significa la palabra *CLEAN*
+A).Limpio B).Aceado C).Perfecto D).Configurar
+
+La respuesta 17 es:	a Aprobado	|| El correcto es: a
+
+18.Que significa la palabra *VOID*
+A).Marco B).Borde C).Entero D).Vacio
+
+La respuesta 18 es:	a Desaprobado	|| El correcto es: d
+
+19.Que significa la palabra *BRANCH*
+A).Arbol B).Rama C).Sol D).Luz
+
+La respuesta 19 es:	a Desaprobado	|| El correcto es: b
+
+20.Que significa la palabra *BLAME*
+A).Culpar B).Enojo C).Rencor D).Culpa
+
+La respuesta 20 es:	a Aprobado	|| El correcto es: a
+
