@@ -1,0 +1,7 @@
+============================================================
+=                   Examen de Programacion                 =
+============================================================
+
+La respuesta 1 es: a Aprobado		|| El correcto es: a
+La respuesta 2 es: b Desaprobado	|| El correcto es: a
+La respuesta 3 es: c Desaprobado	|| El correcto es: b
