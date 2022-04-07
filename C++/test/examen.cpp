@@ -48,8 +48,7 @@ int main(){
      }
      
     }
-    
-    
+        
     cout<<"Las correctas son: "<<posistivo<<" Las incorrectas son: "<<negativo<<"\n\n";
     cout<<"Presione una tecla para ver sus resultados\n";
     getch();
@@ -64,8 +63,5 @@ int main(){
      archivo<<"\nLa respuesta "<<i<<" es:\t"<<valotario[i-1]<<" "<<calificacion[i-1]<<"||"<<" El correcto es: "<<Rpt[i-1]<<"\n\n";
     }
     archivo.close();
-    system("Start examen.txt");
-   
-    
-    
+    system("Start examen.txt");    
 }

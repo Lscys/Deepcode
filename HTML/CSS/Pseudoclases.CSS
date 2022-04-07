@@ -1,0 +1,52 @@
+/* PSEUDOCLASES TYPE*/
+/* :first-child      :first-of-type
+:last-child         :last-of-type
+:nth-child()        :nth-of-type() <- busca hijos no importa si no tienen  la misma etiqueta.
+:nth-last-child()   :nth-last-of-type() <- empieza a contar al reves*/
+
+/* PSEUDOCLASES CHILD*/
+/*Poder elegir un hijo*/
+p:first-child {
+    background: yellow;
+}
+p:last-child {
+    background: pink;
+}
+p:nth-child(){  /*even=pares odd=los impares*/
+    background:blue;
+}
+p:only-child {
+    color: yellowgreen; /*hagarra solo a un hijo unico*/
+}
+p:not(:empty) {
+    background: burlywood;
+}
+
+/* PSEUDOCLASES DE FORMULARIO*/
+
+input:focus {  /*<- Cuandod precionas al botton se torna al color asigando*/
+    background: aquamarine;
+}
+
+/* :enable :disable */
+input:disabled {
+    background: darkred;
+}                               /*Desactivar algunas funciones*/
+input:enabled {
+    background: orangered;
+}
+
+/* :checked */
+.elegir:checked + label {  /* label <- selector hermano */
+    font-size: 2em;
+    background: yellow;
+    /*color: red;*/
+}
+
+/* :required :optional */
+form :optional {
+    border: 1px solid green;
+}
+form :required {
+    border: 1px solid red;
+}
