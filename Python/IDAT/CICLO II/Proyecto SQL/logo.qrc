@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>WhatsApp Image 2022-10-28 at 19.50.34.jpeg</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>

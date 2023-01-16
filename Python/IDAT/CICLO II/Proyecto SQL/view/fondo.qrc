@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>fondo.qrc</file>
+    <file>view/subtle-prism.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>subtle-prism.png</file>
+  </qresource>
+</RCC>
